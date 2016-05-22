@@ -1,16 +1,36 @@
 {
-	"name": "NodejsStarterApp",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"start": "node app.js"
-	},
-	"dependencies": {
-		"express": "4.13.x",
-		"cfenv": "1.0.x"
-	},
-	"repository": {},
-	"engines": {
-		"node": "4.x"
-	} 
+  "name": "devops-version-status",
+  "version": "1.0.2",
+  "description": "Show version and status",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --reporter json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brybwy/devops-version-status.git"
+  },
+  "keywords": [
+    "version",
+    "status",
+    "devops"
+  ],
+  "author": "Roy Bai <brybwy@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brybwy/devops-version-status/issues"
+  },
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.4.1"
+  },
+  "homepage": "https://github.com/brybwy/devops-version-status#readme",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^3.4.1",
+    "rootpath": "^0.1.2",
+    "path": "^0.12.7"
+  }
 }

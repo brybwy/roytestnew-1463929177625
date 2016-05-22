@@ -1,0 +1,66 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2016-05-22T16:13:59.366Z",
+    "end": "2016-05-22T16:13:59.375Z",
+    "duration": 9
+  },
+  "tests": [
+    {
+      "title": "testing version",
+      "fullTitle": "test '/status' and '/version' testing version",
+      "duration": 5,
+      "err": {}
+    },
+    {
+      "title": "testing status",
+      "fullTitle": "test '/status' and '/version' testing status",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "testing invalid packagejson",
+      "fullTitle": "test '/status' and '/version' testing invalid packagejson",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "testing invalid format of json",
+      "fullTitle": "test '/status' and '/version' testing invalid format of json",
+      "duration": 1,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "testing version",
+      "fullTitle": "test '/status' and '/version' testing version",
+      "duration": 5,
+      "err": {}
+    },
+    {
+      "title": "testing status",
+      "fullTitle": "test '/status' and '/version' testing status",
+      "duration": 1,
+      "err": {}
+    },
+    {
+      "title": "testing invalid packagejson",
+      "fullTitle": "test '/status' and '/version' testing invalid packagejson",
+      "duration": 0,
+      "err": {}
+    },
+    {
+      "title": "testing invalid format of json",
+      "fullTitle": "test '/status' and '/version' testing invalid format of json",
+      "duration": 1,
+      "err": {}
+    }
+  ]
+}

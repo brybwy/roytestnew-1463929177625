@@ -1,14 +1,28 @@
-# Node.js Starter Overview
+devops-version-status
+===================
 
-The Node.js Starter demonstrates a simple, reusable Node.js web application based on the Express framework.
+A module append two endpoints to the URL
+    1. /version, shows version info from pakcage.json
+    2. /status, gets module name from pakcage.json and show '(module name) is running.'
 
-## Run the app locally
+## Installation
+    npm install devops-version-status --save
 
-1. [Install Node.js][]
-2. Download and extract the starter code from the Bluemix UI
-3. cd into the app directory
-4. Run `npm install` to install the app's dependencies
-5. Run `npm start` to start the app
-6. Access the running app in a browser at http://localhost:6001
+## usage
+    //in Gruntfile.js or Gulpfile.js
+    var app = express();
 
-[Install Node.js]: https://nodejs.org/en/download/
+    var vs = require('devops-version-status');
+    vs(app);
+
+    // default is './package.json', to specificy package.json, e.g.
+    // vs(app, '../package.json')
+
+## test
+    npm test
+
+## Contributing
+    brybwy@gmail.com
+
+## Release History
+    * 1.0.0 Initial release
