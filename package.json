@@ -4,12 +4,20 @@
   "description": "Show version and status",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha --reporter json"
+    "mochatest": "./node_modules/mocha/bin/mocha --reporter json > mochatest.json",
+    "blanketcoverage":"./node_modules/mocha/bin/mocha --require blanket -R json-cov > blanketcoverage.json"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/brybwy/devops-version-status.git"
   },
+  "config": {
+    "blanket": {
+      "pattern": [ "" ],
+      "data-cover-never": [ "node_modules", "test/index" ]
+    }
+  },
+
   "keywords": [
     "version",
     "status",
@@ -29,8 +37,9 @@
     "test": "test"
   },
   "dependencies": {
+    "blanket": "^1.2.3",
     "chai": "^3.4.1",
-    "rootpath": "^0.1.2",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "rootpath": "^0.1.2"
   }
 }
